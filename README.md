@@ -1,3 +1,20 @@
+
+SOURCE : https://www.cril.univ-artois.fr/~boussemart/react/chapter01.html
+
+Ne pas oublier d'installer CORS : 
+Coté back serveur/server.js
+
+const cors = require('cors');
+app.use(cors());
+
+
+lors de l'appel de io : 
+const io = socket(server,{cors:{
+    origin: "*"
+}});
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
